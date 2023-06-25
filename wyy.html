@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>网易云移动端</title>
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/one.css">
+  <script src="./js/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header_box">
+      <div class="one">
+        <div class="one1">
+          <div class="imgbox">
+            <!--  <img class="imgess" src="./images/109951168689166316.jpg" alt=""> -->
+          </div>
+          <span class="icon player_button">
+<!--             <audio src="" id="audioBox" preload="metadata"></audio> -->
+          </span>
+        </div>
+      </div>
+      <div class="two">
+        <div class="two1">
+          <div class="two11">
+            <div class="tow111">
+             <!--  <h2>
+                月光下（她是个成熟的girl） - OneOne/小明bro
+              </h2>
+ -->
+            </div>
+
+           
+
+          </div>
+          <div class="two_t">
+            <div class="tow222">
+
+              <!--  <p class="active">作词 : 小明bro/OneOne</p>
+               <p>作曲 : 小明bro/OneOne</p>
+  -->
+             </div>
+          </div>
+        
+
+        </div>
+        <div class="two2">
+          <div class="target">
+            <span class="iconed"></span>
+            一起听歌
+            <img src="./images/youjiantou.png" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer_box">
+      <div class="boxs">
+        <div class="open">
+          打开
+        </div>
+        <div class="download">
+          下载
+        </div>
+      </div>
+
+    </footer>
+    <div class="background"></div>
+    <div class="background2"></div>
+    <audio src="./obj_w5rDlsOJwrLDjj7CmsOj_28873490430_55cb_e1cc_a754_6a6b15b40998872a36035d84af1319d3 (1).m4a" id="audioBox" preload="metadata">
+  </div>
+  <script>
+    (function () {
+      const app = document.querySelector('.app'),
+        HTML = document.documentElement
+      const computed = function computed() {
+        let orien = Math.abs(window.orientation)
+        if (orien === 90) {
+          // 切换到横屏
+          alert('横屏体验不佳，请您切换到竖屏')
+          app.style.display = 'none'
+          return
+        }
+        // 当前是竖屏
+        app.style.display = 'block'
+
+        // 计算REM的换算比例
+        let deviceW = HTML.clientWidth,
+          designW = 375,
+          initialRatio = 100
+        if (deviceW > 540) deviceW = 540
+        let currentRatio = deviceW / designW * initialRatio
+        HTML.style.fontSize = currentRatio + 'px'
+      }
+      computed()
+      window.addEventListener('resize', computed)
+      // 基于 resize 代替 orientationchange 事件：这样可以适配模拟器中，设备的切换场景
+    })();
+  </script>
+  <script src="./js/one.js"></script>
+  <script src="./js/fastclick.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+
+</html>

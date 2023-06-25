@@ -1,0 +1,7 @@
+url("http://p1.music.126.net/v1b40UUT8wO0Ebihuz3ZNw==/109951168689166316.jpg?imageView&thumbnail=50y50&quality=15&tostatic=0")
+
+
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+
+        transform: matrix(0.888615, 0.458655, -0.458655, 0.888615, 0, 0);

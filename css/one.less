@@ -1,0 +1,552 @@
+html {
+  font-size: 100px;
+}
+
+.app {
+  max-width: 540px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+.header_box,
+.one,
+.two,
+.footer_box {
+  width: 100%;
+}
+
+.header_box {
+  height: 5.56rem;
+}
+
+.one {
+  height: 3.17rem;
+  position: relative;
+
+  .one1 {
+    width: 2.47rem;
+    height: 2.47rem;
+    line-height: 2.47rem;
+    background-color: rgb(241, 175, 75);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../images/d7e4e3a244701ee85fecb5d4f6b5bd57.png) no-repeat;
+    background-size: contain;
+
+
+    .imgbox {
+      width: 1.55rem;
+      height: 1.55rem;
+      margin: .06rem 0 0 .06rem;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: .4rem;
+      animation: rotate 8s linear infinite;
+      animation-play-state: paused;
+
+      /*   &.move {
+        /* animation: musicMove 8s linear 0s infinite; */
+
+    }
+
+     img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .icon {
+    width: 0.56rem;
+    height: 0.56rem;
+    position: absolute;
+    left: 0.95rem;
+    top: 0.95rem;
+    background: url(../images/下载.png) no-repeat;
+    background-size: contain;
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.two {
+  text-align: center;
+
+  .two1 {
+    width: 3.05rem;
+    height: 0.85rem;
+    position: relative;
+
+    .two11 {
+      box-sizing: content-box;
+      width: 3.05rem;
+      padding: 0 .35rem;
+      margin-top: .25rem;
+      text-align: center;
+
+      h2 {
+        margin-top: .03rem;
+        font-size: .18rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-bottom: .1rem;
+      }
+
+      .active {
+        margin-bottom: .1rem;
+        color: rgb(12, 196, 134);
+      }
+    }
+
+    p {
+      font-size: .16rem;
+    }
+
+    .two_t {
+      text-align: center;
+      width: 3.05rem;
+      height: .5rem;
+      line-height: .23rem;
+      margin-left: .2rem;
+      overflow: hidden;
+      -webkit-mask: -webkit-linear-gradient(top, #000, #000 70%, rgba(0, 0, 0, 0));
+
+    }
+  }
+
+  .two2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .3rem;
+    width: 1.26rem;
+    height: 0.3rem;
+    font-size: .14rem;
+
+    .iconed {
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url(../images/icons.png);
+      background-size: cover;
+      animation: myAnimation 8s infinite steps(1, start);
+    }
+
+    img {
+      opacity: .8;
+      width: 0.15rem;
+      height: 0.15rem;
+    }
+  }
+}
+
+.footer_box {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 5.56rem);
+
+  .boxs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 0.42rem;
+
+    .open,
+    .download {
+      color: #fff;
+      letter-spacing: 0.1rem;
+      font-size: .20rem;
+      height: .5rem;
+      width: calc(100vw / 2 - .03rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: .25rem;
+      border: .015rem solid red;
+
+    }
+
+    .open {
+
+      background-color: #1b0e0ed2;
+    }
+
+    .download {
+      background-color: red;
+    }
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
+  width: 100%;
+  height: 100%;
+  background: url(http://p1.music.126.net/v1b40UUT8wO0Ebihuz3ZNw==/109951168689166316.jpg?imageView&thumbnail=50y50&quality=15&tostatic=0) no-repeat;
+  background-size: cover;
+}
+
+.background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, rgba(255, 255, 255, 0.7));
+  z-index: -10;
+}
+
+#audioBox {
+  display: none;
+}
+
+
+
+@keyframes myAnimation {
+  0% {
+    background-position: 0 0
+  }
+
+  1.25% {
+    background-position: -60px 0
+  }
+
+  2.50% {
+    background-position: -120px 0
+  }
+
+  3.75% {
+    background-position: -180px 0
+  }
+
+  5.00% {
+    background-position: -240px 0
+  }
+
+  6.25% {
+    background-position: -300px 0
+  }
+
+  7.50% {
+    background-position: -360px 0
+  }
+
+  8.75% {
+    background-position: -420px 0
+  }
+
+  10.00% {
+    background-position: -480px 0
+  }
+
+  11.25% {
+    background-position: -540px 0
+  }
+
+  12.50% {
+    background-position: -600px 0
+  }
+
+  13.75% {
+    background-position: -660px 0
+  }
+
+  15.00% {
+    background-position: -720px 0
+  }
+
+  16.25% {
+    background-position: -780px 0
+  }
+
+  17.50% {
+    background-position: -840px 0
+  }
+
+  18.75% {
+    background-position: -900px 0
+  }
+
+  20.00% {
+    background-position: -960px 0
+  }
+
+  21.25% {
+    background-position: -1020px 0
+  }
+
+  22.50% {
+    background-position: -1080px 0
+  }
+
+  23.75% {
+    background-position: -1140px 0
+  }
+
+  25.00% {
+    background-position: -1200px 0
+  }
+
+  26.25% {
+    background-position: -1260px 0
+  }
+
+  27.50% {
+    background-position: -1320px 0
+  }
+
+  28.75% {
+    background-position: -1380px 0
+  }
+
+  30.00% {
+    background-position: -1440px 0
+  }
+
+  31.25% {
+    background-position: -1500px 0
+  }
+
+  32.50% {
+    background-position: -1560px 0
+  }
+
+  33.75% {
+    background-position: -1620px 0
+  }
+
+  35.00% {
+    background-position: -1680px 0
+  }
+
+  36.25% {
+    background-position: -1740px 0
+  }
+
+  37.50% {
+    background-position: -1800px 0
+  }
+
+  38.75% {
+    background-position: -1860px 0
+  }
+
+  40.00% {
+    background-position: -1920px 0
+  }
+
+  41.25% {
+    background-position: -1980px 0
+  }
+
+  42.50% {
+    background-position: -2040px 0
+  }
+
+  43.75% {
+    background-position: -2100px 0
+  }
+
+  45.00% {
+    background-position: -2160px 0
+  }
+
+  46.25% {
+    background-position: -2220px 0
+  }
+
+  47.50% {
+    background-position: -2280px 0
+  }
+
+  48.75% {
+    background-position: -2340px 0
+  }
+
+  50.00% {
+    background-position: -2400px 0
+  }
+
+  51.25% {
+    background-position: -2460px 0
+  }
+
+  52.50% {
+    background-position: -2520px 0
+  }
+
+  53.75% {
+    background-position: -2580px 0
+  }
+
+  55.00% {
+    background-position: -2640px 0
+  }
+
+  56.25% {
+    background-position: -2700px 0
+  }
+
+  57.50% {
+    background-position: -2760px 0
+  }
+
+  58.75% {
+    background-position: -2820px 0
+  }
+
+  60.00% {
+    background-position: -2880px 0
+  }
+
+  61.25% {
+    background-position: -2940px 0
+  }
+
+  62.50% {
+    background-position: -3000px 0
+  }
+
+  63.75% {
+    background-position: -3060px 0
+  }
+
+  65.00% {
+    background-position: -3120px 0
+  }
+
+  66.25% {
+    background-position: -3180px 0
+  }
+
+  67.50% {
+    background-position: -3240px 0
+  }
+
+  68.75% {
+    background-position: -3300px 0
+  }
+
+  70.00% {
+    background-position: -3360px 0
+  }
+
+  71.25% {
+    background-position: -3420px 0
+  }
+
+  72.50% {
+    background-position: -3480px 0
+  }
+
+  73.75% {
+    background-position: -3540px 0
+  }
+
+  75.00% {
+    background-position: -3600px 0
+  }
+
+  76.25% {
+    background-position: -3660px 0
+  }
+
+  77.50% {
+    background-position: -3720px 0
+  }
+
+  78.75% {
+    background-position: -3780px 0
+  }
+
+  80.00% {
+    background-position: -3840px 0
+  }
+
+  81.25% {
+    background-position: -3900px 0
+  }
+
+  82.50% {
+    background-position: -3960px 0
+  }
+
+  83.75% {
+    background-position: -4020px 0
+  }
+
+  85.00% {
+    background-position: -4080px 0
+  }
+
+  86.25% {
+    background-position: -4140px 0
+  }
+
+  87.50% {
+    background-position: -4200px 0
+  }
+
+  88.75% {
+    background-position: -4260px 0
+  }
+
+  90.00% {
+    background-position: -4320px 0
+  }
+
+  91.25% {
+    background-position: -4380px 0
+  }
+
+  92.50% {
+    background-position: -4440px 0
+  }
+
+  93.75% {
+    background-position: -4500px 0
+  }
+
+  95.00% {
+    background-position: -4560px 0
+  }
+
+  96.25% {
+    background-position: -4620px 0
+  }
+
+  97.50% {
+    background-position: -4680px 0
+  }
+
+  98.75% {
+    background-position: -4740px 0
+  }
+
+  100.00% {
+    background-position: -4800px 0
+  }
+}
